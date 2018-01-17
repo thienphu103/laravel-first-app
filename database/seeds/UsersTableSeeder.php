@@ -16,8 +16,8 @@ class UsersTableSeeder extends Seeder
 
     for($i = 0; $i < 1000; $i++) {
         App\User::create([
-            'name' => $faker->userName,
-            
+            'name' => $faker->Name,
+            'username' => $faker->userName,
             'email' => $faker->email,
 	    'password'=> $faker->password,
         ]);
